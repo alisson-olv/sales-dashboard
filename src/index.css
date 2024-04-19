@@ -50,6 +50,7 @@ button {
 .flex {
   display: flex;
   gap: var(--gap);
+  flex-wrap: wrap;
 }
 
 .flex > * {
@@ -80,4 +81,15 @@ button {
   display: grid;
   padding: var(--gap);
   gap: var(--gap);
+}
+
+.resume {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.resume h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--gap);
+  color: var(--color-1);
 }

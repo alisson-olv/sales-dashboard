@@ -1,5 +1,16 @@
-import { ComponentProps } from "react";
+import { CSSProperties, ComponentProps } from "react";
 import { useData } from "../context/dataContext";
+
+const style: CSSProperties = {
+  padding: 'var(--gap-s) var(--gap)',
+  backgroundColor: 'var(--color-3)',
+  border: 'none',
+  borderRadius: 'var(--gap-s)',
+  color: 'var(--color-1)',
+  fontWeight: '600',
+  textTransform: 'capitalize',
+  width: '100%',
+}
 
 function getMonthName(n: number) {
   const month = new Date;
@@ -37,7 +48,7 @@ export default function BtnMonth({ monthOffset, ...props }: BtnMonthProps) {
 
   return (
     <div>
-      <button onClick={() => setMonthPeriod(monthOffset)} {...props}>{getMonthName(monthOffset)}</button>
+      <button style={style} onClick={() => setMonthPeriod(monthOffset)} {...props}>{getMonthName(monthOffset)}</button>
     </div>
   )
 }

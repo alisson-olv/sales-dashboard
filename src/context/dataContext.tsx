@@ -5,7 +5,7 @@ interface SalesProps {
   id: string;
   nome: string;
   preco: number;
-  status: string;
+  status: 'pago' | 'falha' | 'processando';
   pagamento: string;
   parcelas: null | number;
   data: string;

@@ -5,14 +5,14 @@ import Resume from "./pages/resume";
 function App() {
 
   return (
-    <>
+    <div className="container">
       <Sidenav />
 
       <main>
         <Header />
         <Resume />
       </main>
-    </>
+    </div>
   )
 }
 

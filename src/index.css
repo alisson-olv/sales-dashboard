@@ -1,9 +1,83 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
   line-height: 1.5;
   font-size: 1.5rem;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-1: #463220;
+  --color-2: #66593c;
+  --color-3: #eceadd;
+  --color-4: #f7f8f5;
+  --color-5: #ffffff;
+  --gap-s: 0.625rem;
+  --gap: 1.25rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  color: var(--color-2);
+  background: var(--color-4);
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.box {
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background: var(--color-5);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.mb {
+  margin-bottom: var(--gap);
+}
+
+.bg-1 {
+  background: var(--color-1);
+}
+.bg-2 {
+  background: var(--color-2);
+}
+.bg-3 {
+  background: var(--color-3);
+}
+.bg-4 {
+  background: var(--color-4);
+}
+.bg-5 {
+  background: var(--color-5);
+}
+
+.container {
+  display: grid;
+  padding: var(--gap);
+  gap: var(--gap);
 }

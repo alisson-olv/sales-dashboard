@@ -1,12 +1,13 @@
-import { useData } from "../context/dataContext"
-import useFetch from "../hooks/useFetch"
+import { useData } from "../context/dataContext";
 
 export default function Resume() {
   const { data } = useData();
 
-  console.log(data);
-
   return (
-    <h2>Resume</h2>
+    <div>
+      {data?.map((user) => (
+        <p key={user.id}>{user.nome}</p>
+      ))}
+    </div>
   )
 }

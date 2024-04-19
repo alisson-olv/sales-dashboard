@@ -1,6 +1,12 @@
+import DateRange from "./dateRange";
+import Months from "./months";
+
 export default function Header() {
 
-  return(
-    <h3>Header</h3>
+  return (
+    <div>
+      <DateRange />
+      <Months />
+    </div>
   )
 }

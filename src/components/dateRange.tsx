@@ -5,7 +5,7 @@ export default function DateRange() {
   const { initialDate, setInitialDate, finalDate, setFinalDate } = useData();
 
   return (
-    <form className="box flex mb" onSubmit={(e) => e.preventDefault()}>
+    <form className="box flex" onSubmit={(e) => e.preventDefault()}>
       <DateInput
         onChange={({ target }) => setInitialDate(target.value)}
         value={initialDate}

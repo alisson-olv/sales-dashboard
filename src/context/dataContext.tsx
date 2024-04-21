@@ -1,7 +1,7 @@
 import { Dispatch, PropsWithChildren, SetStateAction, createContext, useContext, useState } from "react";
 import useFetch from "../hooks/useFetch";
 
-interface SalesProps {
+export interface SalesProps {
   id: string;
   nome: string;
   preco: number;
